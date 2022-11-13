@@ -1,7 +1,7 @@
 databases:
   - name: django-bona-blog
-    databaseName: django-bona-blog
-    user: django-bona-blog
+    databaseName: bonablog
+    user: bona
 
 services:
   - type: web
