@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "django-bona-blog"
+version = "0.1.0"
+description = ""
+authors = ["chess_napes.0k@icloud.com"]
+readme = "README.md"
+packages = [{include = "django_bona_blog"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+asgiref = "^3.5.2"
+coverage = "^6.5.0"
+django = "^4.1.3"
+django-ckeditor = "^6.5.1"
+django-crispy-forms = "^1.14.0"
+django-debug-toolbar = "^3.7.0"
+django-filter = "^22.1"
+django-js-asset = "^2.0.0"
+django-taggit = "^3.0.0"
+djangorestframework = "^3.14.0"
+model-mommy = "^2.0.0"
+pillow = "^9.3.0"
+pytz = "^2022.6"
+six = "^1.16.0"
+sqlparse = "^0.4.3"
+tzdata = "^2022.6"
+dj-database-url = "^1.0.0"
+psycopg2-binary = "^2.9.5"
+whitenoise = {extras = ["brotli"], version = "^6.2.0"}
+gunicorn = "^20.1.0"
+black = "^22.10.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
