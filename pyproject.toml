@@ -4,7 +4,7 @@ version = "0.1.0"
 description = ""
 authors = ["chess_napes.0k@icloud.com"]
 readme = "README.md"
-packages = [{include = "django_bona_blog"}]
+packages = []
 
 [tool.poetry.dependencies]
 python = "^3.9"
@@ -26,9 +26,11 @@ sqlparse = "^0.4.3"
 tzdata = "^2022.6"
 dj-database-url = "^1.0.0"
 psycopg2-binary = "^2.9.5"
-whitenoise = {extras = ["brotli"], version = "^6.2.0"}
+brotli = "^1.0.9"
+whitenoise = "^6.2.0"
 gunicorn = "^20.1.0"
 black = "^22.10.0"
+"backports.zoneinfo" = "^0.2.1"
 
 
 [build-system]
