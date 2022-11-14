@@ -130,6 +130,19 @@ Django = ">=3.2.4"
 sqlparse = ">=0.2.0"
 
 [[package]]
+name = "django-environ"
+version = "0.9.0"
+description = "A package that allows you to utilize 12factor inspired environment variables to configure your Django application."
+category = "main"
+optional = false
+python-versions = ">=3.4,<4"
+
+[package.extras]
+develop = ["coverage[toml] (>=5.0a4)", "pytest (>=4.6.11)", "furo (>=2021.8.17b43,<2021.9.0)", "sphinx (>=3.5.0)", "sphinx-notfound-page"]
+docs = ["furo (>=2021.8.17b43,<2021.9.0)", "sphinx (>=3.5.0)", "sphinx-notfound-page"]
+testing = ["coverage[toml] (>=5.0a4)", "pytest (>=4.6.11)"]
+
+[[package]]
 name = "django-filter"
 version = "22.1"
 description = "Django-filter is a reusable Django application for allowing users to filter querysets dynamically."
@@ -315,7 +328,7 @@ brotli = ["brotli"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "b9144d49c4f0f82c47b85f8e954877a767a5032e3c7de57f29df6ddde99695e1"
+content-hash = "86a96b20d963b9d4c2770da281fa9e8931644278f4fcfb3f2eb8c6b2068033ca"
 
 [metadata.files]
 asgiref = []
@@ -329,6 +342,7 @@ django = []
 django-ckeditor = []
 django-crispy-forms = []
 django-debug-toolbar = []
+django-environ = []
 django-filter = []
 django-js-asset = []
 django-taggit = []
