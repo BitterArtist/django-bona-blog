@@ -5,7 +5,8 @@ databases:
 
 services:
   - type: web
-    name: mysite
+    name: django-bona-blog
+    plan: starter
     env: python
     buildCommand: "./build.sh"
     startCommand: "gunicorn mysite.wsgi:application"
