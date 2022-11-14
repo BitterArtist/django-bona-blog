@@ -10,17 +10,6 @@ python-versions = ">=3.7"
 tests = ["pytest", "pytest-asyncio", "mypy (>=0.800)"]
 
 [[package]]
-name = "backports.zoneinfo"
-version = "0.2.1"
-description = "Backport of the standard library zoneinfo module"
-category = "main"
-optional = false
-python-versions = ">=3.6"
-
-[package.extras]
-tzdata = ["tzdata"]
-
-[[package]]
 name = "black"
 version = "22.10.0"
 description = "The uncompromising code formatter."
@@ -317,17 +306,19 @@ category = "main"
 optional = false
 python-versions = ">=3.7"
 
+[package.dependencies]
+Brotli = {version = "*", optional = true, markers = "extra == \"brotli\""}
+
 [package.extras]
 brotli = ["brotli"]
 
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "e90ff5c46895ccb81fc4c9f586ccd710a4c279cdd697f277e2f898b8512abe5e"
+content-hash = "4e3626654c08dd85d77283989be4f74112f484a0b49be153bea7c764ccee7bed"
 
 [metadata.files]
 asgiref = []
-"backports.zoneinfo" = []
 black = []
 brotli = []
 click = []
