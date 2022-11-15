@@ -9,7 +9,7 @@ services:
     plan: free
     env: python
     buildCommand: "./build.sh"
-    startCommand: "gunicorn djangobonablog.wsgi:application"
+    startCommand: "gunicorn bona_blog.wsgi:application"
     autoDeploy: false
     envVars:
       - key: DATABASE_URL
