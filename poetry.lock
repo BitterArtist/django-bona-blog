@@ -10,6 +10,17 @@ python-versions = ">=3.7"
 tests = ["pytest", "pytest-asyncio", "mypy (>=0.800)"]
 
 [[package]]
+name = "backports.zoneinfo"
+version = "0.2.1"
+description = "Backport of the standard library zoneinfo module"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.extras]
+tzdata = ["tzdata"]
+
+[[package]]
 name = "black"
 version = "22.10.0"
 description = "The uncompromising code formatter."
@@ -108,6 +119,17 @@ python-versions = ">=3.8"
 [package.dependencies]
 Django = ">=3.2"
 django-js-asset = ">=2.0"
+
+[[package]]
+name = "django-createsuperuserwithpassword"
+version = "2.0.0"
+description = "Django management command to create usable super users, programmatically"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+Django = ">=1.11"
 
 [[package]]
 name = "django-crispy-forms"
@@ -328,10 +350,11 @@ brotli = ["brotli"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "86a96b20d963b9d4c2770da281fa9e8931644278f4fcfb3f2eb8c6b2068033ca"
+content-hash = "3d98c4f5e4e635b7820a128aff5df2c3dde8e0f8424b2708b3c92ce9e3679388"
 
 [metadata.files]
 asgiref = []
+"backports.zoneinfo" = []
 black = []
 brotli = []
 click = []
@@ -340,6 +363,7 @@ coverage = []
 dj-database-url = []
 django = []
 django-ckeditor = []
+django-createsuperuserwithpassword = []
 django-crispy-forms = []
 django-debug-toolbar = []
 django-environ = []

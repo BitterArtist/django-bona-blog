@@ -2,7 +2,7 @@
 # exit on error
 set -o errexit
 
-poetry install --no-root
-
+poetry install 
+python manage.py createsuperuserwithpassword  --username admin --password admin --email admin@example.org --preserve
 python manage.py collectstatic --no-input
 python manage.py migrate

@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     "whitenoise.runserver_nostatic",
     "django.contrib.staticfiles",
     # Third Party Apps.
+    "django_createsuperuserwithpassword",
     "django_filters",
     "rest_framework",
     "taggit",
